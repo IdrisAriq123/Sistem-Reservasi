@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Classroom Reservation System</h1>
+
+    <!-- Room List -->
+    <section id="room-list">
+        <h2>Available Rooms</h2>
+        <table id="roomsTable">
+            <thead>
+                <tr>
+                    <th>Room Number</th>
+                    <th>Capacity</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation-form">
+        <h2>Reserve a Room</h2>
+        <form id="reservationForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="number" id="roomNumber" placeholder="Room Number" required>
+            <input type="date" id="date" required>
+            <input type="time" id="startTime" required>
+            <input type="number" id="duration" placeholder="Duration (hours)" required>
+            <button type="submit">Reserve</button>
+        </form>
+    </section>
+
+    <!-- Reservation List -->
+    <section id="reservation-list">
+        <h2>Your Reservations</h2>
+        <table id="reservationsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Room Number</th>
+                    <th>Date</th>
+                    <th>Start Time</th>
+                    <th>Duration</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
